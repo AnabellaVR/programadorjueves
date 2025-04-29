@@ -4,19 +4,23 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+require('dotenv').config();
 
+var indexRouter = require('./routes/index');
+// var usersRouter = require('./routes/users');
 
 var proyectosRouter = require('./routes/proyectos');
 
 var tiendaRouter = require('./routes/tienda');
+
+var novedadesRouter = require('./routes/novedades');
 
 var serviciosRouter = require('./routes/servicios');
 
 var estudioRouter = require('./routes/estudio');
 
 var contactoRouter = require('./routes/contacto');
+
 
 var app = express();
 
@@ -31,11 +35,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 
 app.use('/proyectos', proyectosRouter);
 
 app.use('/tienda', tiendaRouter);
+
+app.use('/novedades', novedadesRouter);
 
 app.use('/servicios', serviciosRouter);
 
