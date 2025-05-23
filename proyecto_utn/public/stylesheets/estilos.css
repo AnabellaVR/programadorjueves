@@ -1,4 +1,4 @@
-/* font-family: "Scope One", serif;*/
+/*font-family: "Scope One", serif; C*/
 
 footer {
     background-color: rgb(184, 173, 155);
@@ -6,10 +6,10 @@ footer {
 
 .hero {
     background: url(../img/istockphoto-1990444472-612x612.jpg) no-repeat;
-    background-size:  cover;
+    background-size: cover;
     height: 0.5vh;
     min-height: 900px;
-    color:black;
+    color: black;
 }
 
 
@@ -17,7 +17,7 @@ footer {
 p {
     font-family: "Scope One", serif;
     font-size: 16px;
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 
 .destacados {
@@ -25,17 +25,30 @@ p {
     font-weight: bold;
     font-size: 16px;
 }
+
 .margenes {
-    margin-top: 50px;
+    margin-top: 70px;
     font-family: "Scope One", serif;
-    
+
 }
 
-h3 {
-    
-    font-weight: bold; 
+h3,
+h5,
+h4 {
+    font-family: "Scope One", serif;
+    font-weight: bold;
+
 }
 
-#novedades, #referencias {
+h6 {
+    font-weight: lighter;
+    font-family: "Scope One", serif;
+}
+
+#novedades,
+#referencias,
+#bosses,
+#staff,
+#almohadones {
     margin-top: 80px;
 }

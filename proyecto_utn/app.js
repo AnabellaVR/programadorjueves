@@ -9,15 +9,27 @@ require('dotenv').config();
 var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
 
-var proyectosRouter = require('./routes/proyectos');
+var proyectosRouter = require('./routes/proyectos'); //carpeta routes > proyecto.js
 
 var tiendaRouter = require('./routes/tienda');
+
+var almohadonesRouter = require('./routes/almohadones');
 
 var novedadesRouter = require('./routes/novedades');
 
 var serviciosRouter = require('./routes/servicios');
 
+var disenioRouter = require('./routes/disenio');
+
+var asesoramientoRouter = require('./routes/asesoramiento');
+
+var catalogodetelasRouter = require('./routes/catalogodetelas');
+
 var estudioRouter = require('./routes/estudio');
+
+var quienessomosRouter = require('./routes/quienessomos');
+
+var equipoRouter = require('./routes/equipo');
 
 var contactoRouter = require('./routes/contacto');
 
@@ -37,17 +49,29 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 
-app.use('/proyectos', proyectosRouter);
+app.use('/proyectos' , proyectosRouter);
 
-app.use('/tienda', tiendaRouter);
+app.use('/tienda' , tiendaRouter);
 
-app.use('/novedades', novedadesRouter);
+app.use('/almohadones' , almohadonesRouter);
 
-app.use('/servicios', serviciosRouter);
+app.use('/novedades' , novedadesRouter);
 
-app.use('/estudio', estudioRouter);
+app.use('/servicios' , serviciosRouter);
+
+app.use('/disenio' , disenioRouter);
+
+app.use('/asesoramiento' , asesoramientoRouter);
+
+app.use('/catalogodetelas' , catalogodetelasRouter);
+
+app.use('/estudio' , estudioRouter);
+
+app.use('/quienessomos' , quienessomosRouter);
+
+app.use('/equipo' , equipoRouter);
   
-app.use('/contacto', contactoRouter);
+app.use('/contacto' , contactoRouter);
 
 
 // catch 404 and forward to error handler
